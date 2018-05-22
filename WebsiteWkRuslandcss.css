@@ -10,16 +10,7 @@ body > #homeSection {
     position:relative;
 
 
-}a{
-     width: 25%;
-
-     height: 100%;
-
-     margin: 0;
-
-     float: left;
- }
-
+}
 #logoDiv {
     position:absolute;
     max-width:20%;
@@ -61,10 +52,7 @@ body > #homeSection > nav > img {
     opacity:0.3;
 }
 
-footer {
-    z-index:2;
-    bottom:200px;
-}
+
 
 
 footer{
@@ -76,7 +64,7 @@ footer{
     margin: -50px 0  ;
     z-index: 1;
     position: relative;
-    width: 40%;
+    width: 35%;
     margin: auto;
     bottom: 60px;
 }
