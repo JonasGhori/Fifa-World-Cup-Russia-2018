@@ -47,7 +47,7 @@ body > #homeSection > nav > img {
 
 }
 
-#homeSection img:hover {
+#homeSection > nav > img:hover {
     opacity:0.3;
 }
 
