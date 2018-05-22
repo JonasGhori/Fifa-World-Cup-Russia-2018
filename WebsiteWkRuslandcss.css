@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding:0;
-    height:100%; //indien je dit niet doet staat je height default op auto (= zo groot als content)
+    height:100%; /*indien je dit niet doet staat je height default op auto (= zo groot als content)*/
 }
 
 body > #homeSection {
