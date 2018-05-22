@@ -16,6 +16,7 @@ body > #homeSection {
     max-width:20%;
     left:40%;
     right:40%;
+    z-index:1;
 
 }
 
