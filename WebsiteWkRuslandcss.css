@@ -10,7 +10,16 @@ body > #homeSection {
     position:relative;
 
 
-}
+}a{
+     width: 25%;
+
+     height: 100%;
+
+     margin: 0;
+
+     float: left;
+ }
+
 #logoDiv {
     position:absolute;
     max-width:20%;
