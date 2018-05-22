@@ -62,7 +62,7 @@ footer {
 
 
 footer{
-    background-color: yellow;
+    background-color: rebeccapurple;
     color: white;
     text-align: center;
     border-radius: 15px 15px 0 0;
@@ -70,5 +70,8 @@ footer{
     margin: -50px 0  ;
     z-index: 1;
     position: relative;
+    width: 35%;
+    margin: auto;
+    bottom: 60px;
 }
 
