@@ -53,10 +53,9 @@ body > #homeSection > nav > img {
 }
 
 footer {
-    position:absolute;
     z-index:2;
     bottom:200px;
-    left:200px;
+
 
 }
 
@@ -70,7 +69,7 @@ footer{
     margin: -50px 0  ;
     z-index: 1;
     position: relative;
-    width: 35%;
+    width: 40%;
     margin: auto;
     bottom: 60px;
 }
