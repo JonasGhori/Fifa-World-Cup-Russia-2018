@@ -65,7 +65,11 @@ footer{
     z-index: 1;
     position: relative;
     width: 35%;
-    margin: auto;
     bottom: 60px;
+}
+
+a {
+    height: 100%;
+    max-width:25%;
 }
 
