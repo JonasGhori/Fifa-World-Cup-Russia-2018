@@ -52,14 +52,22 @@ body > #homeSection > nav > img {
     opacity:0.3;
 }
 
+footer {
+    position:absolute;
+    z-index:2;
+    bottom:200px;
+    left:200px;
+
+}
+
 
 footer{
     background-color: yellow;
     color: white;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
     border: 3px solid pink;
-    margin: -50px 0px  ;
+    margin: -50px 0  ;
     z-index: 1;
     position: relative;
 }
