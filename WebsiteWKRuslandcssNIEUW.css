@@ -16,7 +16,9 @@ a{
     display: block;
     float: left;
     margin: 0;
-
+    vertical-align:middle;
+    display: inline-block;
+    text-align:center;
 }
 #logoDiv{
     vertical-align: top;
@@ -41,3 +43,26 @@ border-radius: 50px;
        margin-left: auto;
        margin-right: auto;
    }
+a:hover> p{
+    display: block;
+    color: white;
+    font-size: 300%;
+    background-color: black;
+}a:hover
+ {
+    opacity: 0.5;
+ }
+ footer{
+     margin: 0px;
+     padding: 5px 0px 0px 0px;
+     background-color: black;
+     color: white;
+     text-align: center;
+ }
+ a p{
+     margin: -500px 0px;
+     display: none;
+ } header img {
+    width: 30%;
+    }
+
