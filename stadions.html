@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Stadions</title>
-    <script type="text/javascript" src="resources/stadions/stadions.js" defer></script>
+    <script type="text/javascript" src="resources/stadions/stadions.js" ></script>
 <style>
     #map {
         height: 500px;
@@ -12,8 +12,7 @@
 </style>
 </head>
 <body>
-<h3>My Google Maps Demo</h3>
-<!--The div element for the map -->
+<h3> STADIUMS</h3>
 <div id="map"></div>
 <script >
     function initMap(){
@@ -24,14 +23,34 @@
         }
         var map = new google.maps.Map(document.getElementById("map"),mapOptions);
 var length=stadions.length;
-alert(stadions[1].position);
+var markers=[];
         for (var i =0 ; i <length ; i++){
-let marker = new google.maps.Marker({position:stadions[i].position,title:stadions[i].title},
-   );
-marker.setMap(map);
-}
+var pos = new google.maps.LatLng(stadions[i]['lat'], stadions[i]['long']);
+            markers[i] = new google.maps.Marker({
+                position: pos,
+                map: map,
+                description:stadions[i]['name'],
+                //icon:""
+                id:i
+
+            });
+
+            /*
+            var infowindow = new google.maps.InfoWindow({
+                content: data[i].name});
+
+            infowindow.open(map, markers[i]);
+            google.maps.event.addListener(markers[i], 'click', function () {
+                alert(markers[this.id].description)
+            })*/
+        }
+        for( var j = 0 ; j <length ;j++){
+            markers[j].setMap(map);
+        }
 
     }
+
+
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbVGz-bNd5PufY895dyOdoSYJW8mD3KGo&callback=initMap"></script>
