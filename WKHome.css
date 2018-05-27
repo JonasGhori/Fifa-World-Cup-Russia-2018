@@ -1,0 +1,80 @@
+
+/*links grootte + naast elkaar met geen margin */
+a {
+    width:25%;
+    height:100vh;
+    float:left;
+    margin: 0;
+}
+
+/*img zo groot als parent > a */
+img {
+    width:100%;
+    height:100%;
+}
+
+
+/* witte randen aan zjikanten wegwerken */
+body {
+    margin:0;
+}
+
+
+/*p's opmaak en positioneren.
+Voor left => margin-left gebruiken, anders allemaal op dezelfde plaats vanaf links
+display op none voor de hover*/
+a > p {
+    position: absolute;
+    bottom: 65%;
+    margin-left: 170px;
+    color: limegreen;
+    font-family: fantasy;
+    font-size: 30pt;
+    display:none;
+}
+
+/*opacity voor de hover*/
+a:hover {
+    opacity:0.5;
+}
+
+/*p zichtbaar maken bij hover*/
+a:hover > p {
+    display:block;
+}
+
+/*opmaak en positioneren van header
+z-index op 1 zodat het bovenop de a's ligt*/
+header {
+    position:absolute;
+    left:35%;
+    width:30%;
+    height:170px;
+    z-index:1;
+}
+
+/*logo image border afronden*/
+#logo {
+    border-radius:0 0 40px 40px;
+}
+
+/*footer opmaak en positioneren */
+footer {
+    position: absolute;
+    bottom:0px;
+    left:35%;
+    background-color: black;
+    opacity:0.9;
+    text-align: center;
+    width: 30%;
+    color:limegreen;
+    font-family: fantasy;
+    font-size: 30pt;
+    border: solid 5px limegreen;
+}
+
+/*footer > p opmaak */
+footer > p {
+    margin-top: 5px;
+    font-size:15pt;
+}
