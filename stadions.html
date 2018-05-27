@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stadions</title>
+    <script type="text/javascript" src="resources/stadions/stadions.js" defer></script>
+<style>
+    #map {
+        height: 500px;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+<h3>My Google Maps Demo</h3>
+<!--The div element for the map -->
+<div id="map"></div>
+<script >
+    function initMap(){
+
+        var mapOptions = {
+            center: new google.maps.LatLng(55.75, 37.61),
+            zoom :4
+        }
+        var map = new google.maps.Map(document.getElementById("map"),mapOptions);
+var length=stadions.length;
+alert(stadions[1].position);
+        for (var i =0 ; i <length ; i++){
+let marker = new google.maps.Marker({position:stadions[i].position,title:stadions[i].title},
+   );
+marker.setMap(map);
+}
+
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbVGz-bNd5PufY895dyOdoSYJW8mD3KGo&callback=initMap"></script>
+</body>
+</html>
