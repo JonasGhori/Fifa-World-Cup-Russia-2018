@@ -30,11 +30,11 @@ var pos = new google.maps.LatLng(stadions[i]['lat'], stadions[i]['long']);
                 position: pos,
                 map: map,
                 description:stadions[i]['name'],
-                //icon:""
+                //icon:"C:\"
                 id:i
 
             });
-
+            markers[i].setMap(map);
             /*
             var infowindow = new google.maps.InfoWindow({
                 content: data[i].name});
@@ -44,9 +44,7 @@ var pos = new google.maps.LatLng(stadions[i]['lat'], stadions[i]['long']);
                 alert(markers[this.id].description)
             })*/
         }
-        for( var j = 0 ; j <length ;j++){
-            markers[j].setMap(map);
-        }
+
 
     }
 
