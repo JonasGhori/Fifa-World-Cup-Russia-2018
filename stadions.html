@@ -22,31 +22,39 @@
             zoom :4
         }
         var map = new google.maps.Map(document.getElementById("map"),mapOptions);
-var length=stadions.length;
-var markers=[];
+    var length=stadions.length;
+    var markers=[];
+
         for (var i =0 ; i <length ; i++){
-var pos = new google.maps.LatLng(stadions[i]['lat'], stadions[i]['long']);
+            var pos = new google.maps.LatLng(stadions[i]['lat'], stadions[i]['long']);
             markers[i] = new google.maps.Marker({
                 position: pos,
                 map: map,
                 description:stadions[i]['name'],
-                //icon:"C:\"
+                //icon
                 id:i
 
             });
+
+            let stadion = stadions[i];
+            markers[i].addListener('click', function() {
+               let zin =document.createElement('h1');
+               zin.appendChild(document.createTextNode(stadion['name']));
+                let contentString= zin;
+                 contentString=contentString+  stadion['name']+
+                    "<br>" +"stad :"+ stadion['city']
+                    +"<br>"+"foto:";
+
+                let infowindow =  new google.maps.InfoWindow({
+                    content: contentString});
+                infowindow.open(map, this);
+
             markers[i].setMap(map);
-            /*
-            var infowindow = new google.maps.InfoWindow({
-                content: data[i].name});
 
-            infowindow.open(map, markers[i]);
-            google.maps.event.addListener(markers[i], 'click', function () {
-                alert(markers[this.id].description)
-            })*/
+            });
         }
+       }
 
-
-    }
 
 
 </script>
