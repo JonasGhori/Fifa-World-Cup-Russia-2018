@@ -61,7 +61,7 @@ header {
 /*footer opmaak en positioneren */
 footer {
     position: absolute;
-    bottom:0px;
+    bottom: 0px;
     left:35%;
     background-color: black;
     opacity:0.9;
