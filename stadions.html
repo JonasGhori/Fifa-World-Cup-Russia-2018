@@ -14,6 +14,12 @@
 <body>
 <h3> STADIUMS</h3>
 <div id="map"></div>
+<style>
+    .stad{
+        width: 25%;
+        height: 25%;
+    }
+</style>
 <script >
     function initMap(){
 
@@ -38,12 +44,10 @@
 
             let stadion = stadions[i];
             markers[i].addListener('click', function() {
-               let zin =document.createElement('h1');
-               zin.appendChild(document.createTextNode(stadion['name']));
-                let contentString= zin;
-                 contentString=contentString+  stadion['name']+
+
+                let contentString= "<h1>" + stadion['name']+ "</h1>" +
                     "<br>" +"stad :"+ stadion['city']
-                    +"<br>"+"foto:";
+                    +"<br>"+"foto:"+ "<img class='stad' src='"+stadion['img']+"'>";
 
                 let infowindow =  new google.maps.InfoWindow({
                     content: contentString});
