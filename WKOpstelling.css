@@ -1,0 +1,69 @@
+#spelersdiv {
+    width: auto;
+    overflow-y: scroll;
+    height:700px;
+    float:left;
+    margin: 20px 0 0 150px;
+}
+
+.spelerlinks {
+    float:left;
+    clear:left;
+}
+
+.spelerrechts {
+    float:left;
+}
+
+.spelerlinks, .spelerrechts {
+    font-family: fantasy;
+    font-size: 15pt;
+    text-align:center;
+    border: solid 1px black;
+    margin:0 10px 10px 10px;
+}
+
+.cirkelveld {
+    float:left;
+    margin: 20px 0 0 50px;
+    width: 1200px;
+    height: 700px;
+    background-image: url("resources/veld.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+
+}
+
+header {
+    position:relative;
+    width:500px;
+    height:170px;
+    left:35%;
+}
+
+img {
+    width:100%;
+    height:100%;
+}
+
+body {
+    margin:0;
+}
+
+.cirkel {
+    border: dotted 3px white;
+    width: 80px;
+    height:80px;
+    border-radius: 50% ;
+    position: absolute;
+}
+
+#cirkel1 {
+    left: 800px;
+    top: 300px;
+}
+
+#cirkel2 {
+
+}
