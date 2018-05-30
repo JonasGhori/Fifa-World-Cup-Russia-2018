@@ -31,7 +31,7 @@
     background-image: url("resources/veld.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    position: relative;
+    position: relative; /* position: absolute gaat op zoek naar het eerste element dat op position:relative staat */
 
 }
 
@@ -57,13 +57,63 @@ body {
     height:80px;
     border-radius: 50% ;
     position: absolute;
+    overflow:hidden;
 }
 
+/* cirkels plaatsen op het veld*/
+
 #cirkel1 {
-    left: 800px;
-    top: 300px;
+    top: 10px;
+    left: 350px;
+
 }
 
 #cirkel2 {
+    top: 60px;
+    left: 700px;
+}
 
+#cirkel3 {
+    top: 150px;
+    left: 1100px;
+}
+
+#cirkel4 {
+    top: 150px;
+    left: 30px;
+}
+
+#cirkel5 {
+    top: 300px;
+    left: 320px;
+}
+
+#cirkel6 {
+    top: 200px;
+    left: 540px;
+}
+
+#cirkel7 {
+    top: 300px;
+    left: 750px;
+}
+
+#cirkel8 {
+    top: 460px;
+    left: 80px;
+}
+
+#cirkel9 {
+    top: 470px;
+    left:540px;
+}
+
+#cirkel10 {
+    top: 460px;
+    left: 1000px;
+}
+
+#cirkel11 {
+    top: 600px;
+    left: 540px;
 }
