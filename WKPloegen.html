@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>WK Ploegen</title>
     <link href="WKPloegen.css" rel="stylesheet">
+    <script type="text/javascript" src="WKPloegen.js" defer> </script>
 </head>
 <body>
 
@@ -18,13 +19,81 @@
     <input type="text" id="naam" class="input">
 
     <label for="shortcode" class="label">Shortcode:</label>
-    <input type="text" id="shortcode" class="input">
+    <select name="shortcode" id="shortcode">
+
+        <option value="arg">ARG</option>
+
+        <option value="aus">AUS</option>
+
+        <option value="bel">BEL</option>
+
+        <option value="bra">BRA</option>
+
+        <option value="col">COL</option>
+
+        <option value="crc">CRC</option>
+
+        <option value="cro">CRO</option>
+
+        <option value="den">DEN</option>
+
+        <option value="egy">EGY</option>
+
+        <option value="eng">ENG</option>
+
+        <option value="esp">ESP</option>
+
+        <option value="fra">FRA</option>
+
+        <option value="ger">GER</option>
+
+        <option value="irn">IRN</option>
+
+        <option value="isl">ISL</option>
+
+        <option value="jap">JAP</option>
+
+        <option value="kor">KOR</option>
+
+        <option value="kro">KRO</option>
+
+        <option value="mex">MEX</option>
+
+        <option value="mor">MOR</option>
+
+        <option value="nig">NIG</option>
+
+        <option value="pan">PAN</option>
+
+        <option value="per">PER</option>
+
+        <option value="pol">POL</option>
+
+        <option value="por">POR</option>
+
+        <option value="rus">RUS</option>
+
+        <option value="sar">SAR</option>
+
+        <option value="sen">SEN</option>
+
+        <option value="srb">SRB</option>
+
+        <option value="sui">SUI</option>
+
+        <option value="swe">SWE</option>
+
+        <option value="uru">URU</option>
+
+    </select>
 
     <label for="beschrijving" class="label">Beschrijving:</label>
     <input type="text" id="beschrijving" class="input">
 
-    <input type="button" id="button" value="Toevoegen" onclick="voegLandToe()">
+    <input type="button" id="button" value="Toevoegen">
+    <input type="button" id="refresh" value="refresh" >
 </form>
 
+<div id="landenLijstBox"></div>
 </body>
 </html>

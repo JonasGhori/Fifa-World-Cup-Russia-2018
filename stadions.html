@@ -16,8 +16,12 @@
 <div id="map"></div>
 <style>
     .stad{
-        width: 25%;
-        height: 25%;
+        width: 50px;
+        height: 50px;
+    }
+    icon{
+        width: 10px;
+        height: 10px;
     }
 </style>
 <script >
@@ -30,14 +34,18 @@
         var map = new google.maps.Map(document.getElementById("map"),mapOptions);
     var length=stadions.length;
     var markers=[];
-
+    var iconBase='resources/';
         for (var i =0 ; i <length ; i++){
             var pos = new google.maps.LatLng(stadions[i]['lat'], stadions[i]['long']);
             markers[i] = new google.maps.Marker({
                 position: pos,
                 map: map,
                 description:stadions[i]['name'],
-                //icon
+                icon:{
+                   url: iconBase + 'icon_stadion.png',
+                    scaledSize: new google.maps.Size(15 , 15)
+                },
+
                 id:i
 
             });
@@ -46,7 +54,7 @@
             markers[i].addListener('click', function() {
 
                 let contentString= "<h1>" + stadion['name']+ "</h1>" +
-                    "<br>" +"stad :"+ stadion['city']
+                    "<br>" +"<h6>stad</h6>:"+ stadion['city']
                     +"<br>"+"foto:"+ "<img class='stad' src='"+stadion['img']+"'>";
 
                 let infowindow =  new google.maps.InfoWindow({

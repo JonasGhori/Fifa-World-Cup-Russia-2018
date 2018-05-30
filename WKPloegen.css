@@ -26,6 +26,11 @@ form {
     font-family:fantasy;
     font-weight: bold;
 }
+#refresh{
+
+float: left;
+margin-top: 5px ;
+}
 
 /*HET LOGO VANBOVEN*/
 header {
@@ -43,4 +48,21 @@ img {
 body {
     margin:0;
 }
+select{
+    float: left;
+    margin-top: 5px;
+}
+.cold{
+    width: 300px;
+    border: 3px solid darkred  ;
 
+
+    float: left;
+    clear: left;
+}
+.green{
+    width: 300px;
+    float:left ;
+    margin-left: 30px;
+    border: 3px solid darkcyan  ;
+}
