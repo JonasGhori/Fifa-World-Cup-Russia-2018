@@ -31,7 +31,7 @@ function laadLanden() {
 
 
         let titel = document.createElement('h2');
-        titel.innerHTML =  landen[i].code.substring(0,1).toUpperCase() || landen[i].code.substring(1, landen[i].code.length).toLowerCase()
+        titel.innerHTML =  landen[i].code.substring(0,1).toUpperCase() + landen[i].code.substring(1, landen[i].code.length).toLowerCase()
 
         let desc = document.createElement('p');
         desc.id = "beschrijvingOutput";
