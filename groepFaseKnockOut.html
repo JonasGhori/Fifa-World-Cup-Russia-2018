@@ -5,8 +5,10 @@
     <title>Title</title>
     <style>
         #groepfase{
-            border: dashed 5px crimson ;
+
+            border-right: dashed 5px crimson ;
             width: 50%;
+            display:inline-block ;
         }
 
         header img
@@ -34,7 +36,6 @@
 
                  }
 
-
          input{
              float: right;
          }
@@ -51,38 +52,36 @@
             margin-right: 10px;
         }
 
-
-
-
     </style>
+  <script src="knockOut.js" type="text/javascript" ></script>
 </head>
 <body>
 <header><img src="resources/russiaWorldCup.png" > </header>
 <div id="groepfase">
-<form>
+<form name="pouleA">
     <fieldset>
         <legend> Poule A </legend>
 
 
         <div class="ploegen">
             <img src="resources/landen/egy.png">
-            <input type="radio" name="Egypte" >
-            <input type="radio"  name ="Egypte"  >
+            <input type="radio" name="a1" value="Egypte" >
+            <input id="eg" type="radio" name="b1" value= ="Egypte"  >
             <label >Egypte</label>
 
             <img src="resources/landen/sar.png">
-            <input type="radio" name="Saoedi-Arabië">
-            <input type="radio"  name ="Saoedi-Arabië" >
+            <input onselect="test" type="radio" name="a1" value="Saoedi-Arabië">
+            <input type="radio" name="b1"  value ="Saoedi-Arabië" >
             <label > Saoedi-Arabië</label>
 
             <img src="resources/landen/rus.png">
-            <input type="radio" name="Rusland">
-            <input type="radio"  name ="Rusland" >
+            <input onselect="test" type="radio" name="a1" value="Rusland">
+            <input type="radio" name="b1"  value ="Rusland" >
             <label > Rusland</label>
 
             <img src="resources/landen/uru.png">
-            <input type="radio" name="Uruguay">
-            <input type="radio"  name ="Uruguay" >
+            <input onselect="test" type="radio" name="a1" value="Uruguay">
+            <input type="radio" name="b1"  value ="Uruguay" >
             <label > Uruguay</label>
         </div>
 
@@ -266,6 +265,8 @@
         <label >Japan</label>
     </fieldset>
 </form>
+
 </div>
+<script src="knockOut.js" type="text/javascript" ></script>
 </body>
 </html>
